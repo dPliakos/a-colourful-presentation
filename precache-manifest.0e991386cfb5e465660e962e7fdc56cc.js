@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2bf477bb713317c0ba9824d1ce37fc11",
+    "revision": "b3e0037b0a35a4b8442fe0b9c0150721",
     "url": "/a-colourful-presentation/index.html"
   },
   {
-    "revision": "b332d84d2e1684be29e0",
-    "url": "/a-colourful-presentation/static/css/main.269af7a8.chunk.css"
+    "revision": "0322ae3b67ce37f8984a",
+    "url": "/a-colourful-presentation/static/css/main.e5322bbe.chunk.css"
   },
   {
-    "revision": "22398032b0b7c3f64382",
-    "url": "/a-colourful-presentation/static/js/2.2590bbc1.chunk.js"
+    "revision": "af7379d7de596ad45be9",
+    "url": "/a-colourful-presentation/static/js/2.4dcbe9cc.chunk.js"
   },
   {
-    "revision": "b332d84d2e1684be29e0",
-    "url": "/a-colourful-presentation/static/js/main.0b1d5d1b.chunk.js"
+    "revision": "0322ae3b67ce37f8984a",
+    "url": "/a-colourful-presentation/static/js/main.add0f68f.chunk.js"
   },
   {
     "revision": "b777b631cb63f102372b",
@@ -54,6 +54,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a2b25390f8e831772fe7904356503dab",
     "url": "/a-colourful-presentation/static/media/Rorateithpt2_4.a2b25390.JPG"
+  },
+  {
+    "revision": "3002373017be4ddfa222b2ab30ed8dfa",
+    "url": "/a-colourful-presentation/static/media/fosdem_banner.30023730.png"
   },
   {
     "revision": "68343267af4bb70b16d76d25b69c2afc",
