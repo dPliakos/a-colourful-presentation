@@ -65,6 +65,7 @@ const codesnippet_rails=<div>
     <span className='codeSnippet__code-Input'>schedule </span>
 </div>
 <div>
+    {/* eslint-disable-next-line*/}
     <span className='codeSnippet__code-Comment'>// edit Gemfile and add </span>
     <span className='codeSnippet__code-Command'>gem </span>
     <span className='codeSnippet__code-Input'> 'haml-rails' </span>
