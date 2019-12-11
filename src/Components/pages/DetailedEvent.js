@@ -7,7 +7,7 @@ import CodeSnippets from '../parts/CodeSnippets'
 import { EventBreadCrumbsLevel3, BreadCrumbsLevel3 } from '../parts/BreadCrumbs'
 import FsLightbox from 'fslightbox-react';
 import { Link } from 'react-router-dom'
-import { FacebookShareButton, FacebookIcon } from 'react-share';
+import { FacebookShareButton } from 'react-share';
 import { withRouter } from 'react-router-dom'
 import { Facebook } from '../../svg/Social/SocialSvg'
 
@@ -40,9 +40,10 @@ const LinksRow = (props) => <Row className='postIntroRow'>
     </Col>
 </Row>
 
-const CheatSheet = (props) => <Row className='postIntroRow'>
+const CheatSheet = React.forwardRef((props, ref) => <Row id="cheatsheet"
+    className='postIntroRow'>
     <Col md='8' lg='9' className='cheatSheet'>
-        <div className='cheatIntro'>
+        <div ref={ref} className='cheatIntro'>
             <props.svg /><h2>the Cheatsheet</h2>
         </div>
         <Row>
@@ -69,6 +70,7 @@ const CheatSheet = (props) => <Row className='postIntroRow'>
         <p><b>Pro tip : </b> Make a bookmark so you can always refer back to it! </p>
     </Col>
 </Row>
+)
 const EventCodeSnippets = (props) => <Row className='postIntroRow codeSnippetRow'>
     <Col md='7' lg='8'>
         {props.codeSnippets.map((snippet, id) => <CodeSnippets key={id} title={snippet.title} code={snippet.codesnippets} />)}
@@ -117,6 +119,8 @@ const updateStore = (group) => {
     );
 }
 
+
+
 class WorkshopDetailed extends Component {
 
     constructor(props) {
@@ -124,6 +128,24 @@ class WorkshopDetailed extends Component {
         updateStore(props.group)
         this.state = {
             toggler: false, slide: 0
+        }
+    }
+
+    cheatSheetRef = React.createRef();
+
+    componentDidMount() {
+        setTimeout(() => this.scrollToAnchor(this.cheatSheetRef, 'cheatsheet'), 1000);
+    }
+
+    scrollToAnchor = (toRef, domID) => {
+        console.log(toRef);
+        if (toRef && window.location.href.includes(`#${domID}`)) {
+            toRef.current.scrollIntoView({
+                // optional params
+                behavior: 'smooth',
+                block: 'start',
+                inline: 'center',
+            });
         }
     }
 
@@ -165,7 +187,9 @@ class WorkshopDetailed extends Component {
                 ''
                 : this.props.data.cheatsheet ?
                     <div>
-                        <CheatSheet stages={this.props.data.stages} cheatsheet={this.props.data.cheatsheet} svg={this.props.data.svg} />
+                        <CheatSheet ref={
+                            this.cheatSheetRef
+                        } stages={this.props.data.stages} cheatsheet={this.props.data.cheatsheet} svg={this.props.data.svg} />
                     </div>
                     : ''
             }
