@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9ddcd3fa5a9e7cb8693602aab241e637",
+    "revision": "ffcb6787a030c805a3176150dfe36ed0",
     "url": "/a-colourful-presentation/index.html"
   },
   {
-    "revision": "8e6540739c7b28877d89",
-    "url": "/a-colourful-presentation/static/css/main.69c1d462.chunk.css"
+    "revision": "183a9aec832fbf6ead7d",
+    "url": "/a-colourful-presentation/static/css/main.c9f13ef3.chunk.css"
   },
   {
-    "revision": "4a5db3132dbaa08f68f1",
-    "url": "/a-colourful-presentation/static/js/2.2a66b8f0.chunk.js"
+    "revision": "50223120f72e861ed6e7",
+    "url": "/a-colourful-presentation/static/js/2.b0a0f6cf.chunk.js"
   },
   {
-    "revision": "8e6540739c7b28877d89",
-    "url": "/a-colourful-presentation/static/js/main.7a6ede08.chunk.js"
+    "revision": "183a9aec832fbf6ead7d",
+    "url": "/a-colourful-presentation/static/js/main.5e94310f.chunk.js"
   },
   {
     "revision": "b777b631cb63f102372b",
@@ -50,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3e536d1233f7da2b27d2e4602bd7a3f3",
     "url": "/a-colourful-presentation/static/media/git101poster.3e536d12.jpg"
+  },
+  {
+    "revision": "80b26ef66d2a6a3e520e366d0f393713",
+    "url": "/a-colourful-presentation/static/media/gsoc_ateith_poster.80b26ef6.jpg"
   },
   {
     "revision": "d6ee985258c7ddeb3e9ea49729a71600",
